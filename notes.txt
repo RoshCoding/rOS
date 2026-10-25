@@ -2,4 +2,15 @@ Notes for the OS dev:
 
 org (directive) - tells assembler where we expect our code to be loaded. The assembler uses this information to calculate label addresses.
 
+bits (directive) - tells assembler to emit 16/32/64-bit code.
+
+Directive: gives a clue to the assembler that will affect how the program gets compiled, it is NOT translated to machine code
+
+Instruction: translated to a machine code instruction for the CPU
+
+hlt (instruction) - stops CPU from executing (it can be resumed by an interrupt)
+
+jmp (instruction) - jumps to a specific location, unconditionally (like goto in C)
+
+
 
