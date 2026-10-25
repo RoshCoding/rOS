@@ -1,0 +1,5 @@
+Notes for the OS dev:
+
+org (directive) - tells assembler where we expect our code to be loaded. The assembler uses this information to calculate label addresses.
+
+
