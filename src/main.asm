@@ -8,4 +8,4 @@ main:
 .halt:
     jmp .halt
 
-dw 0xAA55
+dw 0x55AA
