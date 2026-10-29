@@ -7,7 +7,7 @@ bits 16
 start:
     jmp main
 
-msg_success: 		db "Stage 1 complete", 0x0D, 0x0A
+msg_success: 		db "Stage 1 complete", 0x0D, 0x0A, 0
 msg_failure:		db "Load Failed", 0
 boot_drive:		db 0
 attempts:		db 3 			; We're making 3 attempts at this
