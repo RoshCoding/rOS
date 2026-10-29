@@ -25,13 +25,11 @@ main:
     mov sp, 0x7C00 
     cld
 
-    mov [attempts], 3
+    mov bytes [attempts], 3
     call load_stage
-    jnc .success
     jc .failure
 
 .success:
-    clc
     mov si, msg_success
     call print_str
 
@@ -55,10 +53,12 @@ load_stage:
 
     int 0x13
 
+    jnc .done
+    
     mov ah, 0x00
     mov dl, [boot_drive]
-
-    jnc .done
+    
+    int 0x13
     
     dec byte [attempts]
     jnz load_stage
