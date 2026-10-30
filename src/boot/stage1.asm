@@ -25,7 +25,7 @@ main:
     mov sp, 0x7C00 
     cld
 
-    mov bytes [attempts], 3
+    mov byte [attempts], 3
     call load_stage
     jc .failure
 
