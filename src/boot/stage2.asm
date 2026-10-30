@@ -8,7 +8,9 @@ start:
 
 main:
     mov si, message
-    call print_str
+    call print_str		; Output to verify a successful load
+
+    
     jmp .halt
 
 .halt:
@@ -16,6 +18,7 @@ main:
 
 
 %include "src/boot/print.asm"
+%include "src/boot/check_a20.asm"
 
 message: 	db 'Stage 2 loaded', 0
 
