@@ -1,4 +1,5 @@
 ; This file is to set up a program that can check the functionality of A20
+; We return AX = 1 if enabled, and AX = 0 if disabled
 check_a20:
     pushf
     push si

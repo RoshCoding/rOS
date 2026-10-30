@@ -9,8 +9,11 @@ start:
 main:
     mov si, message
     call print_str		; Output to verify a successful load
-
     
+    call disable_a20		; We want to try disabling A20 to see if our enabling method works
+    call check_a20
+    
+
     jmp .halt
 
 .halt:
@@ -18,7 +21,8 @@ main:
 
 
 %include "src/boot/print.asm"
-%include "src/boot/check_a20.asm"
+%include "src/boot/a20/check_a20.asm"
+%include "src/boot/a20/disable_a20.asm"
 
 message: 	db 'Stage 2 loaded', 0
 
