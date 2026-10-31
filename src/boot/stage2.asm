@@ -78,5 +78,7 @@ a20_fail_2:	db "A20 Disabled, Attempt 2", 0x0D, 0x0A, 0
 a20_fail_done:  db "A20 enabling failed, unrecoverable problem", 0x0D, 0x0A, 0
 a20_yes:	db "A20 Enabled", 0x0D, 0x0A, 0
 
+SECTORS_STAGE2: db 8
+
 ; We still want to end on a multiple of 512
-times 512-($-$$) db 0
+times (512*8)-($-$$) db 0

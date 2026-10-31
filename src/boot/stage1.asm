@@ -46,7 +46,7 @@ main:
 load_stage:
     mov ah, 0x02		; 0x02
     mov dl, [boot_drive]	; Drive number
-    mov al, 1			; Number of sectors to read
+    mov al, 8			; Number of sectors to read (choosing 8 as a conservative amount)
     mov cl, 2			; Sector number, starting 1 (bits 0-5)
     mov ch, 0			; Cylinder
     mov dh, 0			; Head
