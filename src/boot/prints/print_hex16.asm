@@ -41,6 +41,6 @@ lower_four:
     pop ax
     ret
 
-%include "src/boot/print_nibble.asm"
+%include "src/boot/prints/print_nibble.asm"
 
 
