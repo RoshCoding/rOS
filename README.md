@@ -24,3 +24,11 @@ A functioning kernel is to be implemented with the following features, written w
 
 ## Testing and Development
 Development is done with Neovim. All testing is currently done with QEMU to emulate a working x86 system.
+
+## Usage
+This project is currently in progress. The bootloader is approaching completion, while the kernel is to be implemented.
+
+### Building
+This project depends on NASM and QEMU. It is currently not yet ready for real devices.
+
+To build, open the directory and run `make`, using the Makefile.
