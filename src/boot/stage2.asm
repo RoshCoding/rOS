@@ -260,6 +260,7 @@ e820_count_print:	db "Section Count: ", 0
 e820_fullcount:		dw 0
 
 
+
 ; We change to 32 bit here
 ; bits 32
 

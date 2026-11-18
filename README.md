@@ -1,5 +1,5 @@
-# rOS: A self-built OS and Bootloader
-This project was built without the use of AI-written code. Every line was hand typed.
+# rOS
+<sub><sup>This project was built without the use of AI-written code. Every line was hand typed.</sub></sup>
 
 
 ## Project Overview:
